@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://use.typekit.net/xwh6cxa.css");
+@import url("https://use.typekit.net/xwh6cxa.css");
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Permanent Marker', sans-serif;
+    font-family: 'scarlet-wood', sans-serif;
 }
 
 .showcase{
@@ -23,9 +25,20 @@
 }
 
 .text h1{
-    font-size: 7em;
+    font-size: 9em;
     font-weight: 800;
     max-width: 900px;
+}
+
+.text h1.welcome{
+    font-size: 6em;
+    font-family: milka, sans-serif;
+}
+
+.text h1.raftHouse{
+    font-family: milka-baked, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .text h3{
