@@ -7,11 +7,11 @@ $(document).ready(()=>{
     })
 
     function passwordCheck(){
-        if(input.value == pass ){
-            console.log('correct password')
+        if(input.value != pass ){
+            return;
         }
         else{
-            console.log('password is incorrect');
+            window.open('home.html');
         }
     }
 
@@ -25,5 +25,6 @@ $(document).ready(()=>{
             // top: mouseY - $('body').scrollTop(),
         })
         
-    })
+    });
+
 })
