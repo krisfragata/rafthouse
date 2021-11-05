@@ -14,4 +14,10 @@ $(document).ready(()=>{
             console.log('password is incorrect');
         }
     }
+
+    window.addEventListener(mousemove, (e)=>{
+        let mouseX = e.pageX;
+        let mouseY = e.pageY;
+        
+    })
 })

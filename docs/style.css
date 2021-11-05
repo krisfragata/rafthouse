@@ -96,3 +96,12 @@ form{
     color: black;
     
 }
+
+.dot{
+  height: 25px;
+  width: 25px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+  mix-blend-mode: normal;
+}
