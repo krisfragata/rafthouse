@@ -1,6 +1,6 @@
 $(document).ready(()=>{
     const input = document.querySelector('#pass');
-    const pass = "rafthouseparty";
+    const pass = "party";
 
     $('.enter').click(()=>{
         passwordCheck();
