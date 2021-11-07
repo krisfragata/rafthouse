@@ -1,6 +1,7 @@
 $(document).ready(()=>{
     const input = document.querySelector('#pass');
     const pass = "party";
+    const enter = document.querySelector('.enter');
 
     $('.enter').click(()=>{
         passwordCheck();
@@ -8,13 +9,17 @@ $(document).ready(()=>{
 
     function passwordCheck(){
         if(input.value != pass ){
+            if($('.incorrect').hasClass('hidden')){
+                $('.incorrect').removeClass('hidden');
+               }
             return;
         }
         else{
-            window.open('home.html');
+            window.open('archive.html');
         }
     }
 
+    // black dot follows cursor and essentially becomes cursor
     window.addEventListener('mousemove', (e)=>{
         let mouseX = e.pageX;
         let mouseY = e.pageY;
@@ -26,5 +31,8 @@ $(document).ready(()=>{
         })
         
     });
+
+    // when
+   
 
 })
