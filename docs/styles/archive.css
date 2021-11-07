@@ -3,8 +3,13 @@
 @import url("https://use.typekit.net/xwh6cxa.css");
 
 *{
-    background-color: black;
-    font-family: 'scarlet-wood', sans-serif;
+    /* background-color: black; */
+    font-family: 'milka', sans-serif;
+}
+
+.page{
+    display: flex;
+    /* position: absolute; */
 }
 
 .archiveList{
@@ -14,13 +19,51 @@
     left: 0;
     width: 100%;
     height: 100%;
-    color: white;
     font-size: 6em;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.archiveList ul{
     position: relative;
     list-style: none;
-    text-decoration: none;
 }
+
+.archiveList ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 0;
+}
+
+.nav .arrow{
+    background: url('/docs/assets/arrow.png');
+}
+
+/* cursor customization */
+.dot{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+    display: inline-block;
+    mix-blend-mode: normal;
+    position:fixed;
+    opacity: .9;
+    top: 0;
+    left:0;
+    z-index: -1;
+    cursor: none;
+  }
+
+

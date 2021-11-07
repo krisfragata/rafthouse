@@ -33,6 +33,14 @@ $(document).ready(()=>{
     });
 
     // when
+    input.addEventListener('keyup', (e)=>{
+        console.log('type')
+        if(e.keyCode == 13){
+            console.log('enter');
+            enter.click();
+            e.preventDefault();
+        }
+    })
    
 
 })
